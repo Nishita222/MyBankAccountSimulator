@@ -10,7 +10,7 @@ public class BankAccount {
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("Deposited: $" + amount + ". New balance: $" + balance);
+            System.out.println("Deposited: Rs." + amount + ". New balance: Rs." + balance);
         } else {
             System.out.println("Error: Deposit amount must be positive!");
         }
@@ -20,7 +20,7 @@ public class BankAccount {
         if (amount > 0) {
             if (amount <= balance) {
                 balance -= amount;
-                System.out.println("Withdrew: $" + amount + ". New balance: $" + balance);
+                System.out.println("Withdrew: Rs." + amount + ". New balance: Rs." + balance);
             } else {
                 System.out.println("Error: Insufficient funds!");
             }
@@ -30,6 +30,6 @@ public class BankAccount {
     }
 
     public void checkBalance() {
-        System.out.println("Account " + accountNumber + " balance: $" + balance);
+        System.out.println("Account " + accountNumber + " balance: Rs." + balance);
     }
 }

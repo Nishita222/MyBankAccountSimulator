@@ -21,12 +21,12 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Amount to deposit: $");
+                    System.out.print("Amount to deposit: Rs.");
                     double dep = sc.nextDouble();
                     account.deposit(dep);
                     break;
                 case 2:
-                    System.out.print("Amount to withdraw: $");
+                    System.out.print("Amount to withdraw: Rs.");
                     double wit = sc.nextDouble();
                     account.withdraw(wit);
                     break;
